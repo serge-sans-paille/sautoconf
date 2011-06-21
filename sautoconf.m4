@@ -26,17 +26,21 @@ m4_define([AX_FEATURE],[
 	m4_append([AX_EXTRA_PACKAGES],  [ ]AX_CURRENT_PACKAGE) 
 	AC_ARG_ENABLE([$1],
 			[AS_HELP_STRING([--enable-$1],[$2 (defaut is $3)])],
-			[AS_IF([test x"$enableval" = "xyes"],[$4],
+			[AS_IF([test x"$enableval" = "xyes"],[
+				AX_WITH([$1])=yes
+				$4],
 				[
 					AX_WITH([$1])=disabled
-					AX_MSG([$1])="$1 disabled"	
+					AX_MSG([$1])="        $1 disabled"	
 				]
 			)],
 			[
-				m4_if([$3],[yes],[$4],
+				m4_if([$3],[yes],[
+					AX_WITH([$1])=yes
+					$4],
 					[
 						AX_WITH([$1])=disabled
-						AX_MSG([$1])="$1 disabled"
+						AX_MSG([$1])=""
 					])
 			]
 		)

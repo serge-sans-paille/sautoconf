@@ -1,0 +1,15 @@
+﻿sautoconf README 
+	
+
+WHAT IS SAUTOCONF?
+
+sautoconf is a set of m4 macros to be used with autoconf in order to make it *s*impler to use with a nicer configure output. In particular it proposes the concept of feature to handle optional feature properly.
+
+
+HOW TO USE IT 
+
+Simply drop it to your favorite aclocal dir and set ACLOCAL_AMFLAGS accordingly, or rename it into acinclude.m4.
+
+
+
+Please report any errors, updates, or suggestions to serge.guelton@telecom-bretagne.eu.

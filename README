@@ -8,7 +8,7 @@ sautoconf is a set of m4 macros to be used with autoconf in order to make it *s*
 
 HOW TO USE IT 
 
-Simply drop it to your favorite aclocal dir and set ACLOCAL_AMFLAGS accordingly, or rename it into acinclude.m4.
+Create a simlink from sautoconf.m4 to acinclude.m4 in tour autoconf managed directory.See the test/ directory for some samples.
 
 
 

@@ -72,10 +72,11 @@ $PACKAGE_NAME Configuration:
 
   Minimal deps ok? $[]AX_WITH([AX_DEFAULT_PACKAGE])
 $[]AX_MSG([AX_DEFAULT_PACKAGE])
-
+m4_ifset([AX_EXTRA_PACKAGES],[dnl
 m4_foreach_w([_pkg_],[AX_EXTRA_PACKAGES],[dnl
   Build m4_strip(_pkg_)? $[]AX_WITH(m4_strip(_pkg_))
-$[]AX_MSG(m4_strip(_pkg_))
+$[]AX_MSG(m4_strip(_pkg_))dnl
+])dnl
 ])
 EOF
 

@@ -1,3 +1,32 @@
+dnl
+dnl Copyright (c) 2011, Serge guelton All rights reserved.
+dnl
+dnl Redistribution and use in source and binary forms, with or without
+dnl modification, are permitted provided that the following conditions are met:
+dnl
+dnl 1. Redistributions of source code must retain the above copyright notice,
+dnl this list of conditions and the following disclaimer.
+dnl
+dnl 2. Redistributions in binary form must reproduce the above copyright
+dnl notice, this list of conditions and the following disclaimer in the
+dnl documentation and/or other materials provided with the distribution.
+dnl
+dnl 3. Neither the name of the copyright holder nor the names of its
+dnl contributors may be used to endorse or promote products derived from this
+dnl software without specific prior written permission.
+dnl
+dnl THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+dnl AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+dnl IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+dnl ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+dnl LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+dnl CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+dnl SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+dnl INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+dnl CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+dnl ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+dnl POSSIBILITY OF SUCH DAMAGE.
+
 m4_define([AX_TR_UP],[m4_translit([AS_TR_SH([$1])],[a-z],[A-Z])])
 m4_define([AX_MSG],[ax_msg_[]AS_TR_SH([$1])])
 m4_define([AX_WITH],[ax_with_[]AS_TR_SH([$1])])

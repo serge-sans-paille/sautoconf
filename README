@@ -1,15 +1,11 @@
-﻿sautoconf README 
-	
-
-WHAT IS SAUTOCONF?
+﻿WHAT IS SAUTOCONF?
 
 sautoconf is a set of m4 macros to be used with autoconf in order to make it *s*impler to use with a nicer configure output. In particular it proposes the concept of feature to handle optional feature properly.
 
 
-HOW TO USE IT 
+HOW TO USE IT
 
 Create a simlink from sautoconf.m4 to acinclude.m4 in tour autoconf managed directory.See the test/ directory for some samples.
-
 
 
 Please report any errors, updates, or suggestions to serge.guelton@telecom-bretagne.eu.
